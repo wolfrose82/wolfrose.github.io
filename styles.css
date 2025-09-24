@@ -1,3 +1,18 @@
+.logo {
+  display: block;
+  margin: 0 auto;   /* centers the logo horizontally */
+  text-align: center;
+}
+
+/* Center everything inside the hero section */
+.hero {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if needed */
+  flex-direction: column;  /* stacks text and button vertically */
+  text-align: center;      /* centers all text inside */
+}
+
 :root{
   --bg: #fff9f7;
   --card: #ffffff;
