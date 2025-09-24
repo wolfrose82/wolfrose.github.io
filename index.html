@@ -1,78 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WolfRose</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M•S Handmade Jewelry</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>WolfRose.LLC</h1>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">M•S Handmade Jewelry</h1>
+    </div>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Unique Handmade Pieces</h2>
-      <p>Crafted with love and care.</p>
-      <img src="images/hero.jpg" alt="Jewelry display" />
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-text-center">
+      <h2>Welcome to Our Handmade Jewelry Collection</h2>
+      <p>Beautiful, unique pieces crafted with love</p>
+      <a class="btn" href="#products">Shop Now</a>
+    </div>
+  </section>
 
-    <section id="products">
-      <h2>Our Collection</h2>
-      <div class="card product" data-product='{"id":"prod1","title":"Moonlit Wolf Necklace","price":"35.00","img":"images/product1.jpg","desc":"Silver plated pendant with wolf design"}'>
-        <img src="images/product1.jpg" alt="Moonlit Wolf Necklace" />
+  <!-- Products Section -->
+  <section id="products" class="container">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="card product" data-product='{"id":"prod1","title":"Moonlit Wolf Necklace","price":"35.00","img":"images/product1.jpg","desc":"Silver plated pendant with wolf design."}'>
+        <img src="images/product1.jpg" alt="Moonlit Wolf Necklace">
         <h3>Moonlit Wolf Necklace</h3>
         <p class="price">$35.00</p>
         <button class="btn open-product">View</button>
       </div>
-      <div class="card product" data-product='{"id":"prod2","title":"Rose Quartz Bracelet","price":"25.00","img":"images/product2.jpg","desc":"Natural rose quartz stones with elastic fit"}'>
-        <img src="images/product2.jpg" alt="Rose Quartz Bracelet" />
-        <h3>Rose Quartz Bracelet</h3>
-        <p class="price">$25.00</p>
+
+      <!-- Product 2 -->
+      <div class="card product" data-product='{"id":"prod2","title":"Rose Wolf Bracelet","price":"28.00","img":"images/product2.jpg","desc":"Handmade rose and wolf bracelet."}'>
+        <img src="images/product2.jpg" alt="Rose Wolf Bracelet">
+        <h3>Rose Wolf Bracelet</h3>
+        <p class="price">$28.00</p>
         <button class="btn open-product">View</button>
       </div>
-    </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
-        <label>Your Email:<input type="email" name="email" required /></label>
-        <label>Message:<textarea name="message" required></textarea></label>
-        <button type="submit">Send</button>
-      </form>
-      <p>Or email us directly: <a href="mailto:you@example.com">you@example.com</a></p>
-    </section>
-  </main>
+      <!-- Placeholder for more products -->
+      <div class="card product">
+        <img src="images/placeholder.jpg" alt="Placeholder">
+        <h3>Product Name</h3>
+        <p class="price">$0.00</p>
+        <button class="btn">View</button>
+      </div>
 
-  <div id="product-modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img id="modal-img" src="" alt="Product image" />
-      <h3 id="modal-title"></h3>
-      <p id="modal-desc"></p>
-      <p id="modal-price"></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL_OR_MERCHANT_ID">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="item_name" id="paypal-item-name">
-        <input type="hidden" name="amount" id="paypal-item-price">
-        <button type="submit" class="btn">Buy with PayPal</button>
-      </form>
     </div>
-  </div>
+  </section>
 
-  <footer>
-    <p>&copy; <span id="yr"></span> My Handmade Jewelry</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="small">&copy; 2025 M•S Handmade Jewelry</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
