@@ -1,3 +1,29 @@
+/* Center all main text */
+body {
+  text-align: center;
+}
+
+/* Ensure hero text is centered */
+.hero, .hero-text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center the logo */
+.logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Center section titles */
+.section-title {
+  text-align: center;
+}
+
 .logo {
   display: block;
   margin: 0 auto;   /* centers the logo horizontally */
